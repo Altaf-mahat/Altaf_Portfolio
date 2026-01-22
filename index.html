@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <script>
+            const toggle = document.getElementById('nav-toggle'),
+                nav = document.getElementById('nav-menu');
+
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('show');
+            });
+        </script>
+
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Altaf_Portfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                        <li class="nav_item"><a href="#Education" class="nav_link">Education</a></li>
+                        <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                        <li class="nav_item"><a href="#certificates" class="nav_link">Certificates</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="home bd-grid" id="home">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Hi,<br />
+                            I'm <span class="home__title-color">Altaf Mahat</span><br />
+                            Frontend Developer
+                        </h1>
+
+                        <div class="home__buttons">
+                            <a href="https://github.com/Altaf-mahat" class="btn-glow">🤖 Github</a>
+
+                            <a
+                                href="https://www.linkedin.com/in/altaf-mahat-560706296"
+                                target="_blank"
+                                class="btn-glow outline"
+                                >🔗 LinkedIn</a
+                            >
+                        </div>
+                    </div>
+                    <div class="home__img">
+                        <div class="profile-glow">
+                            <img src="IMG_20250307_145702_755.jpg" alt="Altaf" class="home__profile-img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <!-- You can add your image here -->
+                    </div>
+
+                    <div class="about__content">
+                        <h2 class="about__subtitle">Hello,</h2>
+                        <p class="about__text">
+                            My name is <strong>Altaf Yasin Mahat</strong>. Kolhapur, India.I am passionate about technology and continuously work on improving my 
+                            <strong>programming, problem-solving, and software development</strong> skills.                             
+                            My short-term goal is to strengthen my technical expertise and successfully 
+                            complete my degree. My long-term goal is to contribute to a reputed IT company 
+                            where I can grow professionally and create meaningful impact through my work.
+                             <br /><br />
+                            Apart from academics, I enjoy <strong>traveling, coding, reading, video editing, 
+                             graphic designing, and trekking</strong> — activities that help me stay creative, 
+                         refreshed, and motivated.
+                         <br /><br />
+                           
+
+                            I am a passionate learner, always eager to improve and take on new
+                            challenges.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills__container bd-grid">
+    <div>
+      <h2 class="skills__subtitle">Professional Skills</h2>
+
+      <!-- Languages -->
+      <div class="skills__category" data-kind="languages">
+        <h3 class="skills__title">Languages</h3>
+        <div class="skills__grid">
+          <div class="skill"><i class="bx bxl-python"></i><span>Python</span></div>
+          <div class="skill"><i class="bx bxl-html5"></i><span>HTML</span></div>
+          <div class="skill"><i class="bx bxl-css3"></i><span>CSS</span></div>
+          <div class="skill"><i class="bx bxl-javascript"></i><span>JavaScript</span></div>                         
+          <div class="skill"><i class="bx bx-code-curly"></i><span>C</span></div>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skills__category" data-kind="frameworks">
+        <h3 class="skills__title">Frameworks</h3>
+        <div class="skills__grid">
+          <div class="skill"><i class="bx bxl-jav"></i><span></span></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills__category" data-kind="tools">
+        <h3 class="skills__title">Tools</h3>
+        <div class="skills__grid">
+          <div class="skill"><i class="bx bxs-spreadsheet"></i><span>Excel</span></div>
+          <div class="skill"><i class="bx bxs-slideshow"></i><span>PowerPoint</span></div>
+          <div class="skill"><i class="bx bxl-github"></i><span>GitHub</span></div>
+          <div class="skill"><i class="bx bxs-paint"></i><span>Graphic Designing</span></div>
+          <div class="skill"><i class="bx bx-video-recording"></i><span>Video Editing</span></div>
+        </div>
+      </div>
+
+      <!-- Platforms -->
+      <div class="skills__category" data-kind="platforms">
+        <h3 class="skills__title">Platforms & Databases</h3>
+        <div class="skills__grid">
+          <div class="skill"><i class="bx bxs-data"></i><span>MySQL</span></div>
+          <div class="skill"><i class="bx bx-code-alt"></i><span>VS Code</span></div>
+          <div class="skill"><i class="bx bxl-python"></i><span>PyCharm</span></div>
+          <div class="skill"><i class="bx bx-terminal"></i><span>Replit</span></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills__category" data-kind="softskills">
+        <h3 class="skills__title">Soft Skills</h3>
+        <div class="skills__grid">
+          <div class="skill"><i class="bx bx-user-voice"></i><span>Communication</span></div>
+          <div class="skill"><i class="bx bx-brain"></i><span>Problem Solving</span></div>
+          <div class="skill"><i class="bx bx-group"></i><span>Teamwork</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+            <section class="work section" id="Education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="work__content">
+                    <p class="work__description">
+                        I am currently pursuing my 4th year of B.Tech in Computer Science and
+                        Engineering. Although I don't have formal job experience yet, I have
+                        successfully completed two internships: one in <strong>React.js</strong>
+                        and another in <strong>Python</strong>. My goal is to work in a
+                        reputed company where I can grow and contribute meaningfully.
+                    </p>
+                </div>
+            </section>
+
+            <style>
+                .work {
+                    text-align: center;
+                    padding: 40px 20px;
+                }
+
+                .section-title {
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+
+                .about__p {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    line-height: 1.6;
+                    font-size: 1.1rem;
+                }
+            </style>
+
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects__container">
+                    <!-- Project 1 -->
+                    <div class="project__card">
+                        <h3 class="project__title">Online Shopping Mall</h3>
+                        <p class="project__year">2nd Year (2023-2024)</p>
+                        <p class="project__desc">
+                            A basic e-commerce website UI with product listings, navigation
+                            bar and responsive design.
+                        </p>
+                        <p class="project__tech"><strong>Tech:</strong> C++, MySQL</p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project__card">
+                        <h3 class="project__title">Online Voting System</h3>
+                        <p class="project__year">3rd Year (2024-2025)</p>
+                        <p class="project__desc">
+                            A secure voting web app with user login, real-time vote counting,
+                            and admin dashboard.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL
+                        </p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project__card">
+                        <h3 class="project__title">AI-Powered Lost Person Detection System</h3>
+                        <p class="project__year">4th Year (2025-2026)</p>
+                        <p class="project__desc">
+                            A facial recognition system using machine learning to identify and
+                            trace missing persons.
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML, CSS, JavaScript, Python, ML, MySQL
+                        </p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project__card">
+                        <h3 class="project__title">Restaurant-Menu-Card</h3>
+                        <p class="project__year">Personal Project</p>
+                        <p class="project__desc">
+                             latest front-end project:
+                                a fully responsive Restaurant Menu & Order Management Web App.
+
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML, CSS, JavaScript,
+                        </p>
+                        <a
+                                href="https://altaf-mahat.github.io/Restaurant-Menu-Card/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Project</a
+                            >
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project__card">
+                        <h3 class="project__title">YouTube-Clone</h3>
+                        <p class="project__year">Practice Project</p>
+                        <p class="project__desc">
+                             his project helped me strengthen my understanding of
+                                UI/UX design, DOM manipulation, and responsive layouts.
+
+                        </p>
+                        <p class="project__tech">
+                            <strong>Tech:</strong> HTML, CSS, JavaScript,
+                        </p>
+                        <a
+                                href="https://altaf-mahat.github.io/YouTube-Clone/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Project</a
+                            >
+                    </div>
+
+                   
+
+                    <!-- New Project: Snake Game -->
+                    <div class="project__card">
+                        <h3 class="project__title">Snake Game</h3>
+                        <p class="project__year">Personal Project</p>
+                        <p class="project__desc">
+                            A classic Snake Game designed using CSS, HTML, and JavaScript.
+                        </p>
+                        <p class="project__tech"><strong>Tech:</strong> CSS, HTML, JavaScript</p>
+                        <p>
+                            <a
+                                href="https://altaf-mahat.github.io/Snake_Game/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >View Project</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificates section" id="certificates">
+                <h2 class="section-title">Certificates</h2>
+
+                <div class="certificates__container bd-grid">
+                    <!-- Certificate 1 -->
+                    <div class="certificate__item" onclick="openModal('modalReact')">
+                        <h3 class="certificate__title">React.js Internship</h3>
+                        <p class="certificate__company">Code IT Solution Pvt. Ltd.</p>
+                        <p class="certificate__date">20th July 2025</p>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="certificate__item" onclick="openModal('modalPython')">
+                        <h3 class="certificate__title">Python Internship</h3>
+                        <p class="certificate__company">Code Alpha</p>
+                        <p class="certificate__date">30th June 2025</p>
+                    </div>
+
+                    <div class="certificate__item" onclick="openModal('modalArtificialIntelligence')">
+                        <h3 class="certificate__title">Artificial Intelligence Course</h3>
+                        <p class="certificate__company">SkillUp</p>
+                        <p class="certificate__date">25th July 2025</p>
+                    </div>
+
+                    <div class="certificate__item" onclick="openModal('modalReactBootcamp')">
+                        <h3 class="certificate__title">React Bootcamp</h3>
+                        <p class="certificate__company">Lets Upgrade</p>
+                        <p class="certificate__date">28th June 2025</p>
+                    </div>
+
+                    <div class="certificate__item" onclick="openModal('modalDataScience')">
+                        <h3 class="certificate__title">Python for Data Science</h3>
+                        <p class="certificate__company">Cognitive Class</p>
+                        <p class="certificate__date">24th Aug 2025</p>
+                    </div>
+
+                    <div class="certificate__item" onclick="openModal('modalChatGptpython')">
+                        <h3 class="certificate__title">ChatGpt Python</h3>
+                        <p class="certificate__company">SkillUp</p>
+                        <p class="certificate__date">26th July 2025</p>
+                    </div>
+
+                    <div class="certificate__item" onclick="openModal('modalHTML&CSSBootcamp')">
+                        <h3 class="certificate__title">HTML & CSS Bootcamp</h3>
+                        <p class="certificate__company">Lets Upgrade</p>
+                        <p class="certificate__date">5th July 2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modals -->
+            <div id="modalReact" class="modal">
+                <span class="close" onclick="closeModal('modalReact')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="react-certificate.jpeg.jpeg"
+                    alt="React Certificate"
+                />
+            </div>
+
+            <div id="modalPython" class="modal">
+                <span class="close" onclick="closeModal('modalPython')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="CodeAlpha.Certificate_page-0001.jpg"
+                    alt="Python Certificate"
+                />
+            </div>
+
+            <div id="modalArtificialIntelligence" class="modal">
+                <span class="close" onclick="closeModal('modalArtificialIntelligence')">&times;</span>
+                <img class="modal-content" src="AI Certificate.jpeg" alt="Artificial Intelligence" />
+            </div>
+
+            <div id="modalReactBootcamp" class="modal">
+                <span class="close" onclick="closeModal('modalReactBootcamp')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="LUERJSJUN1251393_page-0001.jpg"
+                    alt="React Bootcamp"
+                />
+            </div>
+            
+            <div id="modalDataScience" class="modal">
+                <span class="close" onclick="closeModal('modalDataScience')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="Python DataScience.jpeg"
+                    alt="Python for Data Science"
+                />
+            </div>
+
+            <div id="modalChatGptpython" class="modal">
+                <span class="close" onclick="closeModal('modalChatGptpython')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="Simplilearn Certificate (1)_page-0001.jpg"
+                    alt="ChatGpt Python"
+                />
+            </div>
+
+            <div id="modalHTML&CSSBootcamp" class="modal">
+                <span class="close" onclick="closeModal('modalHTML&CSSBootcamp')">&times;</span>
+                <img
+                    class="modal-content"
+                    src="LUEHTMLJUL1252367_page-0001.jpg"
+                    alt="HTML & CSS Bootcamp"
+                />
+            </div>
+        </main>
+
+        <script>
+            function openModal(id) {
+                document.getElementById(id).style.display = 'block';
+            }
+
+            function closeModal(id) {
+                document.getElementById(id).style.display = 'none';
+            }
+
+            window.onclick = function (event) {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach((modal) => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            };
+        </script>
+
+        <footer class="footer">
+            <p class="footer__title">Altaf Mahat</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <p class="footer__copy">&#169; Thank You</p>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggle = document.getElementById('nav-toggle');
+                const nav = document.getElementById('nav-menu');
+
+                if (toggle && nav) {
+                    toggle.addEventListener('click', function () {
+                        nav.classList.toggle('show-menu');
+                    });
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                if (window.innerWidth <= 768) {
+                    // Center align Projects container
+                    const projectContainer = document.querySelector('.projects__container');
+                    if (projectContainer) {
+                        projectContainer.style.display = 'flex';
+                        projectContainer.style.flexDirection = 'column';
+                        projectContainer.style.alignItems = 'center';
+                        projectContainer.style.padding = '1rem';
+                    }
+
+                    // Style each Project card
+                    const projectCards = document.querySelectorAll('.project__card');
+                    projectCards.forEach((card) => {
+                        card.style.backgroundColor = '#ffffff';
+                        card.style.borderRadius = '10px';
+                        card.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.1)';
+                        card.style.padding = '0.8rem';
+                        card.style.marginBottom = '1.2rem';
+                        card.style.borderLeft = '4px solid #4e63f1';
+                        card.style.maxWidth = '350px';
+                        card.style.width = '100%';
+                        card.style.textAlign = 'center';
+                    });
+
+                    // Center align Certificates container
+                    const certContainer = document.querySelector('.certificates__container');
+                    if (certContainer) {
+                        certContainer.style.display = 'flex';
+                        certContainer.style.flexDirection = 'column';
+                        certContainer.style.alignItems = 'center';
+                        certContainer.style.padding = '1rem';
+                    }
+
+                    // Style each Certificate card
+                    const certCards = document.querySelectorAll('.certificate__item');
+                    certCards.forEach((card) => {
+                        card.style.backgroundColor = '#ffffff';
+                        card.style.borderRadius = '10px';
+                        card.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.1)';
+                        card.style.padding = '0.8rem';
+                        card.style.marginBottom = '1.2rem';
+                        card.style.borderLeft = '4px solid #1fc3aa';
+                        card.style.maxWidth = '350px';
+                        card.style.width = '100%';
+                        card.style.textAlign = 'center';
+                        card.style.cursor = 'pointer';
+                    });
+                }
+            });
+
+            // When a link inside the mobile menu is clicked
+            document.querySelectorAll('.nav__link').forEach((link) => {
+                link.addEventListener('click', () => {
+                    const navMenu = document.querySelector('.nav__menu'); // Your menu wrapper
+                    navMenu.classList.remove('show-menu'); // Hide the menu
+                });
+            });
+        </script>
+    </body>
+</html
