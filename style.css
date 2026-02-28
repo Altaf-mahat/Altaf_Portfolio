@@ -113,9 +113,11 @@
   }
 
   .home__img {
+    
     order: 1;
     margin-top: 20px;
     display: flex;
+    margin-left: 50px;
     justify-content: center;
   }
 
@@ -150,14 +152,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .home__img {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: -30px auto 0 auto !important; /* थोड़ा ऊपर लाने के लिए negative margin-top */
-    width: 100%;
-  }
+
 
   .profile-glow {
     width: 320px;  /* बड़ा किया */
@@ -183,7 +178,7 @@
     padding: 1.5rem;
     gap: 1.5rem;
   }
-}
+
 @media screen and (max-width: 768px) {
   .home__container {
     flex-direction: column !important;
@@ -227,9 +222,12 @@
 }
 @media screen and (max-width: 768px) {
   .home__img {
+    display: flex !important;
     justify-content: center !important;
-    margin-top: -450px !important;
-    transform: translateX(-10px); /* हल्की left shift */
+    align-items: center !important;
+    margin-top: -40px !important; /* Image को ऊपर लाने के लिए */
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .profile-glow {
@@ -239,10 +237,8 @@
     justify-content: left;
   }
 }
-@media screen and (max-width: 768px) {
-  .home {
-    padding-top: 10px !important;
-  }
+
+  
 
   .home__content {
     margin-top: -40px !important;
@@ -253,22 +249,8 @@
     line-height: 2.2rem;
     margin-bottom: 100px;
   }
-}
-/* Mobile Navigation Styles */
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 1rem 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    text-align: center;
-  }
+
+
 
   .show-menu {
     display: flex;
@@ -292,7 +274,7 @@
   .nav__item {
     margin: 0.5rem 0;
   }
-}
+
 
 
 /* Retain rest of the original CSS as is */
@@ -331,59 +313,11 @@
   padding: 2rem;
 }
 
-.home__data {
-  flex: 1 1 300px;
-}
 
-.home__img {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.profile-glow {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #4a6cf7, #6f9cf9);
-  box-shadow: 0 0 30px rgba(0, 247, 255, 0.3);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.home__profile-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid white;
-}
 
-/* ✅ Mobile View: Image goes below and center */
-@media screen and (max-width: 768px) {
-  .home__container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .home__img {
-    order: 2;
-    margin-top: 20px;
-  }
-
-  .home__data {
-    order: 1;
-  }
-
-  .profile-glow {
-    width: 250px;
-    height: 250px;
-  }
-}
 
 
 
@@ -422,11 +356,7 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: 200;
-  display: block;
-}
+
 
 
 .section-title {
@@ -508,20 +438,9 @@ img {
   align-items: center;
 }
 
-.home__profile-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid white;
-  box-shadow: 0 0 40px rgba(72, 221, 255, 0.4);
-  transition: transform 0.3s ease;
-}
 
 
-.home__profile-img:hover {
-  transform: scale(1.05);
-}
+
 
 .home__buttons {
   margin-top: 1.5rem;
@@ -592,20 +511,8 @@ img {
   background-color: #3451d1;
 }
 
-.home__img {
-  flex: 1;
-  display: flex;
- 
-}
 
-.home__profile-img {
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid white;
-  box-shadow: 0 0 35px rgba(0, 247, 255, 0.3);
-}
+
 
 .home__content {
   display: flex;
@@ -663,44 +570,24 @@ img {
   color: white;
 }
 
-.home__img {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.home__img {
-  display: flex;
-  justify-content: flex-end; /* Aligns to right */
-  align-items: flex-start;   /* Aligns to top */
-  margin-top: -2000px;          /* Adjust this for spacing from top */
-  margin-right: -200px;        /* Adjust this for spacing from right */
-}
+
+
 @media screen and (max-width: 480px) {
   .profile-pic {
     transform: translateX(-10px); /* shift left by 10px */
   }
 }
-@media screen and (max-width: 480px) {
-  .home__img {
-    justify-content: flex-start;  /* 📸 Align to left */
-    margin-right: 0;              /* 🧽 Remove negative margin */
-    margin-left: -15px;           /* ↔ Slight shift left */
-    margin-top: -100px;           /* 🧼 Adjust top gap if needed */
-  }
 
   .profile-glow {
-    transform: translateX(-50px); /* 🌀 Move glow container left */
+    transform: translateX(-5px); /* 🌀 Move glow container left */
+/* 🌀 Move glow container left */
   }
 
   .home__img {
-    object-position: right; /* 🧷 Focus left part of image */
+    object-position: right;
+     /* 🧷 Focus left part of image */
   }
-}
-html {
-  scroll-behavior: smooth;
-}
 
 
 .profile-glow {
@@ -714,6 +601,7 @@ html {
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease-in-out;
+  
 }
 
 .profile-glow:hover {
@@ -725,6 +613,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
   border-radius: 50%;
   border: 6px solid #fffdf4;
 }
@@ -1034,6 +923,7 @@ html {
   }
   .home__img {
     width: 200px;
+    bottom: 30%;
   }
 }
 @media screen and (min-width: 576px) {
@@ -1160,6 +1050,7 @@ html {
     padding: 8rem 0 2rem;
   }
   .home__img {
+    
     width: 400px;
     bottom: 10%;
   }
@@ -1740,4 +1631,34 @@ body {
   .home__data {
     padding-top: 40px;  /* aur thoda spacing ke liye */
   }
+}
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+}
+@media screen and (max-width: 768px) {
+  .home__img {
+    width: 250px !important;
+    margin-top: 20px !important;
+    transform: none !important;
+    justify-content: center !important;
+  }
+}
+.home__img {
+  margin: 0 auto !important;      /* Center horizontally */
+  
+  
+  width: 10px;                   /* Image ka size */
+                /* Responsive */
+  transform: none !important;     /* Koi shift na ho */
+           /* Right ko reset karo */
+       /* Bottom reset */
+}
+.home__img:hover{
+  transform: scale(1.05);
+  animation: 20pxShake 0.5s infinite alternate;
+  
+
 }
