@@ -582,12 +582,18 @@ img {
   font-size: 3rem;
   font-weight: bold;
   color: #111;
+  
  
+}
+
+.home__data {
+  margin-top: -40px;   /* Value adjust kar sakte ho */
 }
 
 .home__title-color {
   color: #4a6cf7;
 }
+
 
 .home__buttons {
   margin-top: 2rem;
